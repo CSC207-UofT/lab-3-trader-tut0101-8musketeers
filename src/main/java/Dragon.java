@@ -19,6 +19,21 @@ public class Dragon implements Drivable, Domesticatable, Tradable {
     public String sound() {
         return "Hrrraaaarr";
     }
+    
+    @Override
+    public int wildness() {
+        return 9000;
+    }
+
+    @Override
+    public String dangerLevel() {
+        return "Extremely dangerous!!";
+    }
+    
+    @Override
+    public String getColor() {
+        return "Shiny with hints of " + this.element;
+    }
 
     @Override
     public void upgradeSpeed() {
