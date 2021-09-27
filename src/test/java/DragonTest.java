@@ -22,7 +22,7 @@ public class DragonTest {
     
     @Test(timeout = 50)
     public void TestGetMaxSpeed() {
-        assertTrue(d.getMaxSpeed());
+        assertTrue(0 < d.getMaxSpeed());
     }
     
     @Test(timeout = 50)
