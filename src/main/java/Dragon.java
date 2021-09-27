@@ -17,7 +17,7 @@ public class Dragon implements Drivable, Domesticatable, Tradable {
 
     @Override
     public String sound() {
-        return "Hrrraaaarr 🔥";
+        return "Hrrraaaarr";
     }
 
     @Override
