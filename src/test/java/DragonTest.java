@@ -17,7 +17,7 @@ public class DragonTest {
 
     @Test(timeout = 50)
     public void TestSound() {
-        assertEquals("Hrrraaaarr 🔥", d.sound());
+        assertEquals("Hrrraaaarr", d.sound());
     }
     
     @Test(timeout = 50)
