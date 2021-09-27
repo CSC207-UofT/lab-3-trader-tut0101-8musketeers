@@ -13,6 +13,16 @@ public class Horse implements Drivable, Domesticatable, Tradable {
     }
 
     @Override
+    public int wildness() {
+        return 2;
+    }
+
+    @Override
+    public String dangerLevel() {
+        return "Dangerous";
+    }
+
+    @Override
     public void upgradeSpeed() {
         this.maxSpeed++;
     }
@@ -30,6 +40,11 @@ public class Horse implements Drivable, Domesticatable, Tradable {
     @Override
     public int getPrice() {
         return 10;
+    }
+
+    @Override
+    public String getColor() {
+        return null;
     }
 
     @Override
