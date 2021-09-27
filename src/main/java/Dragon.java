@@ -5,11 +5,14 @@ import java.util.*;
 public class Dragon implements Drivable, Domesticatable, Tradable {
     private int maxSpeed;
     private String element;
+    private int price;
 
     public Dragon(String element) {
         Random randomizer = new Random();
         this.maxSpeed = randomizer.nextInt(10) + 60;
         this.element = element;
+        this.price = randomizer.nextInt(20) + 40;
+        if (this.element == "Fire") this.price += 5;
     }
 
     @Override
@@ -34,7 +37,7 @@ public class Dragon implements Drivable, Domesticatable, Tradable {
 
     @Override
     public int getPrice() {
-        return 60;
+        return this.price;
     }
 
     @Override
