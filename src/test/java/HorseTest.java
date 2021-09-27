@@ -42,5 +42,4 @@ public class HorseTest {
     public void TestGetPrice() {
         assertEquals(10, h.getPrice());
     }
-
 }
